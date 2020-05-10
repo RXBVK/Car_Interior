@@ -23,7 +23,7 @@ class Main extends React.Component {
             <div id="main-wrap">
                 {this.state.sections.map((section, index) =>
                     <ImageClickInfo
-                        image={section.fields.image.fields.file.fileName}
+                        image={section.fields.image.fields.file.url}
                         key={index}
                         points={section.fields.points}
                     />
